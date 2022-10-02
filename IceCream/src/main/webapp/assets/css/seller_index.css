@@ -1,0 +1,35 @@
+@charset "ISO-8859-1";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Roboto&display=swap");
+
+/* GLOBAL STYLES */
+:root {
+  --font-color-dark: #603913;
+  --font-color-light: #fdbd32;
+  --bg-light: #fffaed;
+}
+html{
+  scroll-behavior: smooth;
+}
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Montserrat", sans-serif;
+ }
+
+ body {
+   width: 100%;
+   font-family: "Montserrat", sans-serif;
+   background-color: #ccc;
+ }
+
+ #welcome{
+   line-height: 55px;
+   margin: 20px;
+   border-radius: 15px;
+   padding-left: 30px ;
+   text-align: left;
+   align-content: center;
+   background-color: var(--bg-light);
+   color: var(--font-color-dark);
+}

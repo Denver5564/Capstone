@@ -1,0 +1,211 @@
+@charset "ISO-8859-1";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Roboto&display=swap");
+
+/* GLOBAL STYLES */
+:root {
+  --font-color-dark: #603913;
+  --font-color-light: #fdbd32;
+  --bg-light: #fffaed;
+}
+html{
+  scroll-behavior: smooth;
+}
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Montserrat", sans-serif;
+ }
+
+ body {
+   width: 100%;
+   font-family: "Montserrat", sans-serif;
+   background-color: #ccc;
+ }
+
+#sidebar{
+  background-color: var(--bg-light);
+  color: black;
+  width: 20%;
+  height: 100vh;
+  float: left;
+  position: fixed;
+}
+
+#sidebar .sidebar-logo{
+  margin-top: 10px;
+  height: 120px;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#sidebar .accordion {
+   background-color: var(--bg-light);
+   color: rgb(0, 0, 0);
+   cursor: pointer;
+   padding: 18px;
+   width: 100%;
+   border: none;
+   text-align: left;
+   outline: none;
+   font-size: 15px;
+   transition: 0.4s;
+ }
+
+ #sidebar .accordion:after{
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+ }
+ 
+ #sidebar .active:after{
+  content: "\2212";
+ }
+
+ #sidebar .accordion:hover{
+  background-color: #ccc;
+ }
+ #sidebar .active {
+  background-color: var(--font-color-light);
+  border-radius: 25px;
+  color: black;
+ }
+ 
+ #sidebar .panel {
+   background-color: #fff;
+   max-height: 0;
+   overflow: hidden;
+   transition: max-height 0.2s ease-out;
+   line-height: 50px;
+ }
+
+ #sidebar .panel p{
+  padding-left: 10px;
+}
+
+#sidebar .logout {
+  background-color: var(--bg-light);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 18px;
+  width: 60%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  position: absolute;
+       bottom: 0px;
+}
+
+/* --PANEL BUTTON-- */
+#sidebar .panel-button {
+  background-color: var(--bg-light);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  padding-left: 45px;
+  line-height: 20px;
+}
+
+#sidebar .panel-button:hover {
+  background-color: #ccc;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  padding-left: 45px;
+}
+
+#sidebar .panel .panel-button:focus{
+  color: red;
+  background-color: rgb(209, 207, 207);
+}
+
+/* --CONTENT1-- */
+#content1{
+  background-color: rgb(209, 207, 207);
+  min-height: 100vh;
+  overflow: hidden;
+  margin-left: 20%;
+}
+
+#page-header1{
+  background-color: transparent;
+  padding: 10px;
+}
+
+#page-header1 .page-path span{
+  word-spacing: 5px;
+  font-size: 15px;
+}
+
+#page-header1 .page-path h3{
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+#manage-navbar{
+  float: left;
+  background-color: transparent;
+  width: 96%;
+  height: 75px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.09);
+  margin-left: 20px;
+  border-radius: 25px;
+  align-content:center;
+}
+
+#navbar{
+  display: flex;
+}
+
+#navbar li{
+  list-style: none;
+}
+
+#navbar li button{
+  background-color: transparent;
+  color: black;
+  transition: 0.2s ease-in;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 20px;
+  border: none;
+}
+
+#navbar li button:hover{
+  color: blue;
+  text-decoration: underline blue 2px;
+}
+
+#seller-table{
+  float: left;
+  width: 96%;
+  padding: 20px;
+  border: 1px solid;
+  margin: 20px;
+  border-radius: 20px;
+  background-color: var(--bg-light);
+}
+
+#seller-table .image_size{
+  height: 80px;
+  width: 80px;
+}

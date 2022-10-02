@@ -1,0 +1,44 @@
+#manage-navbar{
+  float: left;
+  background-color: transparent;
+  width: 96%;
+  height: 75px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.09);
+  margin-left: 20px;
+  border-radius: 25px;
+  align-content:center;
+}
+
+#navbar{
+  display: flex;
+}
+
+#navbar li{
+  list-style: none;
+}
+
+#navbar li button{
+  background-color: transparent;
+  color: black;
+  transition: 0.2s ease-in;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 20px;
+  border: none;
+}
+
+
+#seller-table{
+  float: left;
+  width: 96%;
+  padding: 20px;
+  border: 1px solid;
+  margin: 20px;
+  border-radius: 20px;
+  background-color: var(--bg-light);
+}
+
+#seller-table .image_size{
+	height: 80px;
+	padding-left: 20px;
+}

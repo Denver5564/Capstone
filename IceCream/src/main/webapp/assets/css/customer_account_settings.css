@@ -1,0 +1,136 @@
+@charset "ISO-8859-1";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Roboto&display=swap");
+
+/* GLOBAL STYLES */
+:root {
+  --font-color-dark: #603913;
+  --font-color-light: #fdbd32;
+  --bg-light: #fffaed;
+}
+html{
+  scroll-behavior: smooth;
+}
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Montserrat", sans-serif;
+ }
+
+
+
+ #cont-acc{
+   background-color: rgb(209, 207, 207);
+   height: 85vh;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+#cont-acc .cont-box{
+   background-color: var(--bg-light);
+   padding: 20px;
+   border-radius: 10px;
+   border: 2px solid var(--font-color-dark);
+}
+
+#cont-acc .acc-title{
+   padding: 10px;
+   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.09);
+}
+
+#cont-acc .maintitle{
+   color: black;
+   font-weight: bold;
+   font-size: 20px;
+   padding-left: 20px;
+}
+#cont-acc .subtitle{
+   font-style: normal;
+   font-weight: lighter;
+   color: rgb(158, 158, 158);
+   padding-left: 30px;
+}
+#cont-acc .acc-form{
+   text-align: left;
+   align-content: center;
+   padding-left: 50px;
+   padding-top: 20px;
+}
+
+#cont-acc .acc-form label{
+   text-align: right;
+   align-content: center;
+   width: 200px;
+   line-height: 40px;
+   margin-right: 20px;
+   color: rgb(156, 156, 156);
+}
+
+#cont-acc .acc-form input{
+   background-color: white;
+   text-align: left;
+   align-content: center;
+   margin-left: 5px;
+   line-height: 40px;
+   width: 220px;
+   padding-left: 10px;
+   margin-top: 10px;
+   border: 1px solid var(--font-color-dark);
+   border-radius: 5px;
+}
+
+#cont-acc .acc-form .acc-email{
+   background-color: white;
+   text-align: left;
+   align-content: center;
+   margin-left: 5px;
+   line-height: 40px;
+   width: 500px;
+   padding-left: 10px;
+   margin-top: 10px;
+}
+
+#cont-acc .acc-form .acc-storename{
+   text-align: left;
+   align-content: center;
+   margin-left: 5px;
+   line-height: 40px;
+   width: 400px;
+   padding-left: 10px;
+   margin-top: 10px;
+}
+
+#cont-acc .acc-form .acc-gender{
+   text-align: left;
+   align-content: center;
+   height: 40px;
+   margin-left: 5px;
+   padding-left: 10px;
+   margin-top: 10px;
+   border-radius: 5px;
+}
+
+#cont-acc .acc-form .acc-bday{
+   border-radius: 5px;
+   text-align: left;
+   align-content: center;
+   height: 40px;
+   margin-left: 5px;
+   padding-left: 10px;
+   width: 200px;
+   margin-top: 10px;
+}
+
+#cont-acc .acc-form .username{
+   border: none;
+}
+
+.acc-submit{
+   padding: 7px;
+   width: 90px;
+   border: none;
+   border-radius: 3px;
+   margin-top: 10px;
+   margin-left: 700px;
+   background-color: var(--font-color-light);
+}
